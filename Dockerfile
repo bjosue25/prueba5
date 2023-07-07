@@ -5,6 +5,7 @@ RUN npm install
 RUN npm run build
 
 
+
 FROM node:19.2-alpine3.16 as Deps-Produ
 WORKDIR /app
 COPY package.json ./
